@@ -7,19 +7,19 @@ const middleware = function (req, res, next) {
     next();
   };  
 
-app.get('/listUsers', function (req, res) {
+app.get('/hello', function (req, res) {
     res.send( "Merhaba, GET isteği attınız" );
     });
 
-app.post('/addUser',middleware, function (req, res) {
+app.post('/hello',middleware, function (req, res) {
     res.send( "Merhaba, POST isteği attınız" );
     });
 
-app.delete('/deleteUser', function (req, res) {      
+app.delete('/hello', function (req, res) {      
       res.send("Merhaba, DELETE isteği attınız ");
    });
 
-app.put('/addPut', function (req, res) {
+app.put('/hello', function (req, res) {
     res.send( "Merhaba, PUT isteği attınız" );
 });
 
